@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extension Vite Shadcn UI Starter",
+  "version": "0.0.0",
+  "description": "A Chrome extension to view bookmarks as ticket cards",
+  "action": {},
+  "background": { "service_worker": "background.js", "type": "module" },
+  "permissions": [
+    "bookmarks",
+    "storage",
+    "unlimitedStorage",
+    "favicon",
+    "activeTab",
+    "scripting",
+    "contextMenus"
+  ],
+  "optional_host_permissions": ["<all_urls>"]
+}
