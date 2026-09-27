@@ -10,13 +10,6 @@ export default function SiteHeader() {
             visual display of your bookmarks
           </span>
         </div>
-
-        <nav className="flex items-center gap-7 text-[11px] font-inter font-light tracking-widest uppercase text-neutral-500">
-          <span className="text-neutral-900 border-b border-neutral-900 pb-0.5 font-normal">
-            Collection
-          </span>
-          <span className="text-neutral-400">2026 Edition</span>
-        </nav>
       </div>
     </header>
   );
