@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-instrument: "Instrument Serif", Georgia, serif;
+  --font-georgia: Georgia, "Times New Roman", serif;
+  --font-inter: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  .font-instrument {
+    font-family: var(--font-instrument);
+  }
+  .font-georgia {
+    font-family: var(--font-georgia);
+  }
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+  .font-mono-clean {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Subtle paper texture */
+.paper-texture {
+  background-color: #faf8f5;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Scalloped top border mask */
+.ticket-scallop-top {
+  mask-image: radial-gradient(
+    circle at 10px 0,
+    transparent 0,
+    transparent 6px,
+    black 6.5px
+  );
+  mask-size: 20px 100%;
+  mask-repeat: repeat-x;
+  -webkit-mask-image: radial-gradient(
+    circle at 10px 0,
+    transparent 0,
+    transparent 6px,
+    black 6.5px
+  );
+  -webkit-mask-size: 20px 100%;
+  -webkit-mask-repeat: repeat-x;
+}
